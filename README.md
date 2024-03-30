@@ -1,4 +1,4 @@
-# Day1_vsd
+# vsd  workshop
 DAY1 VSD WORKSHOP
 Implementation details of DAY1
 Day1 we were introduced to OpenLANE and how to use it and we ran the design picorv32a we checked the reports that is stat reports and synthesis as well
@@ -23,4 +23,5 @@ flop ratio=1613/18036
 flop ratio=0.0894322466178
 percentage=8.9432
 
-#DAY2_vsd
+#DAY2 vsd workshop
+
