@@ -23,5 +23,87 @@ flop ratio=1613/18036
 flop ratio=0.0894322466178
 percentage=8.9432
 
+
 #DAY2 vsd workshop
+In the day 1 we learnt how to synthesise the design that is synthesis of  design  picorv32a was done.Next further continuing the next step in the physical design is floor planning and power planning.
+
+1)We understood the parameters used in floor planning like utilisation factor = Area occupied by the netlist/Area occupied by the entire core .Ideally utilisation factor =1,but practically utilisation factor of 0.5 to 0.6 is considered and the rest area is used for optimisation.
+Then the other term is aspect ratio which is =height/width
+if aspect ratio=1,the netlist occupied the core is in the shape of square,otherwise it is rectangle.
+
+2)To define the location of preplaced cells 
+preplaced cells are the cells that are used in the design repeatedly ,so that logic is made in to the black box that is blocks and placed on the floor planning,whenever automatic placement and routing routing of the other cells wrt design happens they dont touch area that is occupied by preplaced cells.
+
+3)Power disrtibution :When there is only one source of power supply the circuit which is placed at far distance cannot get the 100 percent power supply because of presence of resistance,inductance parameters on the wire that is used for transferring the power so there comes the term decoupling capacitor,which is very closely placed to the design which decouples the design with the main power supply and the other problem that comes is it is not feasible to use more decoupling capacitors in the entire circuit design ,so the solution to this use of more and more power supplies so that the any part of the circuit can tap the power from the nearest source.
+
+4)Next step is placement of input and output pins on the die and the area between the core and area should not be occupied by any cells because that area is used for pin locations.
+
+5)Now next we proceeded with performing floor planning in the OpenLANE 
+There first we check the floor plan default values  that is how much of core is utilised,aspect ratio ,verical metal layer,horizontal metal layer and then we need to check the values in the config.tcl file of the design picorv32a so the values present in this will take precedence of floor default values and the highest precedence is taken by sky130A config.tcl.
+The following results are shown below.
+![WhatsApp Image 2024-03-30 at 6 32 53 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/5e9f7ec0-975b-49ac-a643-d2ad4e74fd20)
+
+![WhatsApp Image 2024-03-30 at 6 32 52 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9e1ef972-d6df-45fe-b984-c49a596e0c41)
+
+THE COMMAND TO RUN IS run_placement
+
+next number of created techniology layers and library cells are displayed
+
+![WhatsApp Image 2024-03-30 at 6 32 52 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/df2a70c6-a920-4bf2-95ba-1534418bd89e)
+
+core area and core width are displaced
+
+![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/20551e57-074c-47bc-a58a-7769a50d5930)
+
+How many original rows ,endcaps,tap cells inserted are also shown 
+
+![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/7b57717a-1d49-4fbe-b654-fd393ce812e9)
+
+Run placement was successfull
+
+![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/ccd4ecea-726d-41c5-9c3c-7e59ac135547)
+
+then the new one floorplan definition gets added and it looks as shown below
+![WhatsApp Image 2024-03-30 at 6 32 49 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/4803ba28-2a06-4b8d-aec9-5d428268c5b7)
+
+Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
+
+![WhatsApp Image 2024-03-30 at 6 32 49 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/6c888286-df10-40bd-b474-813474a4693e)
+![WhatsApp Image 2024-03-30 at 6 32 49 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/098167b9-163d-48ec-a5f4-73eb6bcaf9c9)
+![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/a242aa11-91f9-434c-8b59-aa7196094b55)
+
+Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
+in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
+
+command is run_placement.
+![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0b3a2a46-5d2b-4712-85c7-d27501b740df)
+![WhatsApp Image 2024-03-30 at 6 32 44 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9c263d83-4a83-4602-9ff7-4acbf8730823)
+![WhatsApp Image 2024-03-30 at 6 32 43 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/a44206c7-f96f-420e-a162-82208cbc3bb2)
+As we can see all the cells are placed on the floor plan 
+
+Next we proceeded with cell design flow ,consider the example of inverter all the standard cells are placed in the library and different functionality of the same cells are also placed,which varies in the size,resistance.To design the particular cell there are three steps inputs,design steps,outputs.
+
+In inputs we take it from the foundry DRC & LVC rules,spice models and user defined specifications
+Design steps we do circuoit design that is transistor level and layout design and characterisation which gives information about timing,power,noise which are the outputs
+layout gives LEF,extracted spice netlist(.cir)
+
+next we saw the 8 steps  considered in the characterisation flow and these are fed to GUNA software which will give results or information about timing,noise,power.
+8 steps are as follows 
+1)To read the model of NMOS & PMOS that is given by foundry
+2)To read the extracted spice netlist
+3)understand the behavior of the design
+4)Read the subcircuit of the design
+5)Attach the necessary power sources
+6)Apply the necessary stimuls to the design (Vpulse etc)
+7)To provide necessary output capacitance 
+8)necessary simulation commands like (.trans)
+
+Next we moved to timing characterisation that is propagation delay(50% input and 50% output) and transition of the output(20% to 80%) .
+
+
+
+
+
+
+
 
