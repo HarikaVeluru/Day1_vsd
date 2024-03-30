@@ -22,3 +22,5 @@ percentage=flopratio*100
 flop ratio=1613/18036
 flop ratio=0.0894322466178
 percentage=8.9432
+
+#DAY2_vsd
