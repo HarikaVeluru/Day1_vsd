@@ -5,7 +5,7 @@ Day1 we were introduced to OpenLANE and how to use it and we ran the design pico
 
 The first task was to calculate flop ratio .
 
-1)The following results for design picorv32a
+1)First navigating to the OpenLANE open source software which is used for complete RTL to GDS flow of an integrated circuit.
 
 ![WhatsApp Image 2024-03-30 at 11 34 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/59b818f7-ad0e-4bcb-9910-6921934eb1a3)
 
