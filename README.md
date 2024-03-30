@@ -26,22 +26,25 @@ percentage=8.9432
 
 #DAY2 vsd workshop
 
+THEORY
+
 In the day 1 we learnt how to synthesise the design that is synthesis of  design  picorv32a was done.Next further continuing the next step in the physical design is floor planning and power planning.
 
-1)We understood the parameters used in floor planning like utilisation factor = Area occupied by the netlist/Area occupied by the entire core .Ideally utilisation factor =1,but practically utilisation factor of 0.5 to 0.6 is considered and the rest area is used for optimisation.
+.We understood the parameters used in floor planning like utilisation factor = Area occupied by the netlist/Area occupied by the entire core .Ideally utilisation factor =1,but practically utilisation factor of 0.5 to 0.6 is considered and the rest area is used for optimisation.
 Then the other term is aspect ratio which is =height/width
 if aspect ratio=1,the netlist occupied the core is in the shape of square,otherwise it is rectangle.
 
-2)To define the location of preplaced cells 
+.To define the location of preplaced cells 
 preplaced cells are the cells that are used in the design repeatedly ,so that logic is made in to the black box that is blocks and placed on the floor planning,whenever automatic placement and routing routing of the other cells wrt design happens they dont touch area that is occupied by preplaced cells.
 
-3)Power disrtibution :When there is only one source of power supply the circuit which is placed at far distance cannot get the 100 percent power supply because of presence of resistance,inductance parameters on the wire that is used for transferring the power so there comes the term decoupling capacitor,which is very closely placed to the design which decouples the design with the main power supply and the other problem that comes is it is not feasible to use more decoupling capacitors in the entire circuit design ,so the solution to this use of more and more power supplies so that the any part of the circuit can tap the power from the nearest source.
+.Power disrtibution :When there is only one source of power supply the circuit which is placed at far distance cannot get the 100 percent power supply because of presence of resistance,inductance parameters on the wire that is used for transferring the power so there comes the term decoupling capacitor,which is very closely placed to the design which decouples the design with the main power supply and the other problem that comes is it is not feasible to use more decoupling capacitors in the entire circuit design ,so the solution to this use of more and more power supplies so that the any part of the circuit can tap the power from the nearest source.
 
-4)Next step is placement of input and output pins on the die and the area between the core and area should not be occupied by any cells because that area is used for pin locations.
+.Next step is placement of input and output pins on the die and the area between the core and area should not be occupied by any cells because that area is used for pin locations.
 
-5)Now next we proceeded with performing floor planning in the OpenLANE 
+.Now next we proceeded with performing floor planning in the OpenLANE 
 There first we check the floor plan default values  that is how much of core is utilised,aspect ratio ,verical metal layer,horizontal metal layer and then we need to check the values in the config.tcl file of the design picorv32a so the values present in this will take precedence of floor default values and the highest precedence is taken by sky130A config.tcl.
-The following results are shown below.
+
+1)The following results are shown below.
 
 ![WhatsApp Image 2024-03-30 at 6 32 43 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d5ffa223-1ae3-4e1a-98d9-1c2aaba91ab8)
 ![WhatsApp Image 2024-03-30 at 6 32 44 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d58d118f-2527-4131-bf44-9eb3570ea661)
@@ -49,16 +52,16 @@ The following results are shown below.
 
 THE COMMAND TO RUN IS run_placement
 
-next number of created techniology layers and library cells are displayed
+2)next number of created techniology layers and library cells are displayed
 
 ![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2ed3dcf5-868d-447f-9bd3-45782213e562)
 
 
-core area and core width are displaced
+3)core area and core width are displaced
 
 ![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/aa878602-3ff5-4b4b-9173-cd6d883712e2)
 
-How many original rows ,endcaps,tap cells inserted are also shown 
+4)How many original rows ,endcaps,tap cells inserted are also shown 
 
 ![WhatsApp Image 2024-03-30 at 6 32 49 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/008286bf-9277-49fa-ae04-9c242717cf46)
 
@@ -66,17 +69,17 @@ Run placement was successfull
 
 ![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e00a6587-9b32-41e9-afae-f92b1d1c15a0)
 
-then the new one floorplan definition gets added and it looks as shown below
+5)then the new one floorplan definition gets added and it looks as shown below
 
 ![WhatsApp Image 2024-03-30 at 6 32 51 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0d311baf-e76d-4e19-9154-afea7f42e95a)
 
-Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
+6)Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
 
 ![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/137a2612-6b1c-4e7d-b482-e5be6e409e59)
 ![WhatsApp Image 2024-03-30 at 6 32 51 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0f18333d-68ea-49ef-b2da-4f831ea31df5)
 ![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2d8db2d5-a817-4eb6-b802-f8149b7e53e7)
 
-Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
+7)Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
 in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
 
 command is run_placement.
