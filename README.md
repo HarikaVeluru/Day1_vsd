@@ -24,8 +24,13 @@ The first task was to calculate flop ratio .
 ![WhatsApp Image 2024-03-30 at 11 37 44 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/949cb11c-c5df-4db9-844d-524ea806f1e5)
 
 
+4)Results of the timing reports,command used is gvim <file_name>
 
-4)flop ratio= Number of DFF/Total number of cells
+![WhatsApp Image 2024-03-30 at 11 57 56 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/c091a56a-5e9d-4cd0-bbac-e4e004a0404b)
+
+
+
+5)flop ratio= Number of DFF/Total number of cells
 percentage=flopratio*100
 
 ![WhatsApp Image 2024-03-30 at 11 43 10 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/4ca9cd14-3caa-4bdc-9159-ab511955f3b5)
