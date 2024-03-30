@@ -4,21 +4,23 @@ Implementation details of DAY1
 Day1 we were introduced to OpenLANE and how to use it and we ran the design picorv32a we checked the reports that is stat reports and synthesis as well
 The first task was to calculate flop ratio
 1)The following results for design picorv32a
-![WhatsApp Image 2024-03-29 at 8 30 17 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/bd1e2b59-4702-40d3-8536-26fd0d19ee17)
+![WhatsApp Image 2024-03-30 at 11 06 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/ace1e234-a3a4-443b-a881-7a145e4239ae)
+
 
 2)Then preparing design for synthesis
+![WhatsApp Image 2024-03-30 at 11 07 49 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e5cc1723-cc39-4f6a-9134-3434b83ff333)
 
-![WhatsApp Image 2024-03-29 at 8 36 55 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9a13661d-4f49-42b3-8622-1fdbe51ff370)
 
 3)Ran synthesis successfully
 
-![WhatsApp Image 2024-03-29 at 8 37 56 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/02840799-0495-4ea7-9d16-1c237a3ad87e)
+![WhatsApp Image 2024-03-30 at 11 07 11 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e1102caf-a532-4a50-ba40-371d29cb4e13)
+
 
 4)flop ratio= Number of DFF/Total number of cells
 percentage=flopratio*100
-![WhatsApp Image 2024-03-28 at 9 51 39 PM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/8248cd94-1e5b-480e-9653-8b7375a941de)
+![WhatsApp Image 2024-03-30 at 11 08 57 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2087b71d-25a4-4760-a3a8-5c5c18a0b337)
+![WhatsApp Image 2024-03-30 at 11 08 25 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/83a3a10c-9fe5-43aa-9057-8e593f1b65af)
 
-![WhatsApp Image 2024-03-28 at 9 51 39 PM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d70cf74b-baba-4f95-8034-9b364fb2ed73)
 flop ratio=1613/18036
 flop ratio=0.0894322466178
 percentage=8.9432
