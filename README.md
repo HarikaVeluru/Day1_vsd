@@ -29,6 +29,16 @@ percentage=8.9432
 
 
 
+
+
+
+
+
+
+
+
+
+
 #DAY2 vsd workshop
 
 THEORY
