@@ -10,7 +10,7 @@ The first task was to calculate flop ratio .
 ![WhatsApp Image 2024-03-30 at 11 34 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/59b818f7-ad0e-4bcb-9910-6921934eb1a3)
 
 
-2)Then preparing design for synthesis
+2)Then preparing design for synthesis,and we are using the design picorv32a.
 
 ![WhatsApp Image 2024-03-30 at 11 35 44 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/5fcfb131-ccc5-4786-ad9b-edcdcc11347d)
 
