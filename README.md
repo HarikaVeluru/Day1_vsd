@@ -1,9 +1,12 @@
 # vsd  workshop
 DAY1 VSD WORKSHOP
 Implementation details of DAY1
-Day1 we were introduced to OpenLANE and how to use it and we ran the design picorv32a we checked the reports that is stat reports and synthesis as well
-The first task was to calculate flop ratio
+Day1 we were introduced to OpenLANE and how to use it and we ran the design picorv32a we checked the reports that is stat reports and synthesis as well.
+
+The first task was to calculate flop .
+
 1)The following results for design picorv32a
+
 ![WhatsApp Image 2024-03-30 at 11 34 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/59b818f7-ad0e-4bcb-9910-6921934eb1a3)
 
 
