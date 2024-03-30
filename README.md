@@ -60,48 +60,49 @@ preplaced cells are the cells that are used in the design repeatedly ,so that lo
 There first we check the floor plan default values  that is how much of core is utilised,aspect ratio ,verical metal layer,horizontal metal layer and then we need to check the values in the config.tcl file of the design picorv32a so the values present in this will take precedence of floor default values and the highest precedence is taken by sky130A config.tcl.
 
 1)The following results are shown below.
+![WhatsApp Image 2024-03-30 at 10 44 46 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/cd831bc7-19e1-44a2-843b-ff5fcc45f0a4)
 
-![WhatsApp Image 2024-03-30 at 6 32 43 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d5ffa223-1ae3-4e1a-98d9-1c2aaba91ab8)
-![WhatsApp Image 2024-03-30 at 6 32 44 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d58d118f-2527-4131-bf44-9eb3570ea661)
 
 
 THE COMMAND TO RUN IS run_placement
 
-2)Next number of created techniology layers and library cells are displayed
+2)Next number of created techniology layers and library cells are displayed ,and core area and width is also displayed
+![WhatsApp Image 2024-03-30 at 10 34 54 AM (1)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/d32b58a6-a9c1-46ce-9b5e-ef98ee05fe82)
 
-![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2ed3dcf5-868d-447f-9bd3-45782213e562)
-
-
-3)Core rea and core width are displaced
-
-![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/aa878602-3ff5-4b4b-9173-cd6d883712e2)
 
 4)How many original rows ,endcaps,tap cells inserted are also shown 
 
-![WhatsApp Image 2024-03-30 at 6 32 49 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/008286bf-9277-49fa-ae04-9c242717cf46)
+![WhatsApp Image 2024-03-30 at 10 34 55 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2046e503-2b8f-47bf-b557-1a3b16b274bc)
 
-Run placement was successfull
 
-![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e00a6587-9b32-41e9-afae-f92b1d1c15a0)
+Run floorplan was successfull
+
+![WhatsApp Image 2024-03-30 at 10 34 55 AM (1)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/a6f52add-3d40-426e-9c23-77e7b0c4d6c5)
+
 
 5)Then the new one floorplan definition gets added and it looks as shown below
 
-![WhatsApp Image 2024-03-30 at 6 32 51 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0d311baf-e76d-4e19-9154-afea7f42e95a)
+![WhatsApp Image 2024-03-30 at 10 34 55 AM (2)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/4ec94ccd-0732-4a66-8d88-924add4c2d69)
+
+
 
 6)Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
 
-![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/137a2612-6b1c-4e7d-b482-e5be6e409e59)
-![WhatsApp Image 2024-03-30 at 6 32 51 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0f18333d-68ea-49ef-b2da-4f831ea31df5)
-![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2d8db2d5-a817-4eb6-b802-f8149b7e53e7)
+![WhatsApp Image 2024-03-30 at 10 39 35 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/1f28a274-dc35-4134-8b67-25f53a051ea9)
+![WhatsApp Image 2024-03-30 at 10 40 28 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/8f78cecc-d8dd-4a75-8772-b82222785b09)
+![WhatsApp Image 2024-03-30 at 10 40 28 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/5dbfe665-e15a-40e6-ac44-fa99e05048be)
+![WhatsApp Image 2024-03-30 at 10 42 51 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/28aa237c-b585-4a55-bc84-ca52be950279)
+
 
 7)Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
 in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
 
 .command is run_placement.
 
-![WhatsApp Image 2024-03-30 at 6 32 52 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/6d9a8bcc-570d-4b67-b327-b327e81fc98e)
-![WhatsApp Image 2024-03-30 at 6 32 52 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2e1d5970-189c-4b1f-b3a5-537902f43a0f)
-![WhatsApp Image 2024-03-30 at 6 32 53 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/cab23d0d-9f06-4a8b-9ec1-e59172b741ca)
+![WhatsApp Image 2024-03-30 at 10 37 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/cfb1279c-1b06-4254-92ec-7e0fd7f6abb9)
+![WhatsApp Image 2024-03-30 at 10 43 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2ec1d2e5-d074-47da-82ad-d6522d59e900)
+
+
 
 
 As we can see all the cells are placed on the floor plan 
