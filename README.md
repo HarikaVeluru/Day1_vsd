@@ -59,7 +59,7 @@ core area and core width are displaced
 
 How many original rows ,endcaps,tap cells inserted are also shown 
 
-![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9d8fece8-7aa1-48bb-8374-90d63628be47)
+![WhatsApp Image 2024-03-30 at 6 32 49 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/008286bf-9277-49fa-ae04-9c242717cf46)
 
 Run placement was successfull
 
@@ -71,18 +71,17 @@ then the new one floorplan definition gets added and it looks as shown below
 
 Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
 
-![WhatsApp Image 2024-03-30 at 6 32 49 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/6c888286-df10-40bd-b474-813474a4693e)
-![WhatsApp Image 2024-03-30 at 6 32 49 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/098167b9-163d-48ec-a5f4-73eb6bcaf9c9)
-![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/a242aa11-91f9-434c-8b59-aa7196094b55)
+![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/137a2612-6b1c-4e7d-b482-e5be6e409e59)
+![WhatsApp Image 2024-03-30 at 6 32 51 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0f18333d-68ea-49ef-b2da-4f831ea31df5)
+![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2d8db2d5-a817-4eb6-b802-f8149b7e53e7)
 
 Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
 in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
 
 command is run_placement.
-![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/64ef097d-eed5-454f-b5c7-0710bb55e69b)
-![WhatsApp Image 2024-03-30 at 6 32 51 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e102aa8e-2dd4-4b74-ae79-72b60df30d29)
-![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/8ee120d0-9342-4279-ac3f-82b96c46756e)
-
+![WhatsApp Image 2024-03-30 at 6 32 52 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/6d9a8bcc-570d-4b67-b327-b327e81fc98e)
+![WhatsApp Image 2024-03-30 at 6 32 52 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2e1d5970-189c-4b1f-b3a5-537902f43a0f)
+![WhatsApp Image 2024-03-30 at 6 32 53 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/cab23d0d-9f06-4a8b-9ec1-e59172b741ca)
 
 
 As we can see all the cells are placed on the floor plan 
