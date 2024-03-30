@@ -25,6 +25,7 @@ percentage=8.9432
 
 
 #DAY2 vsd workshop
+
 In the day 1 we learnt how to synthesise the design that is synthesis of  design  picorv32a was done.Next further continuing the next step in the physical design is floor planning and power planning.
 
 1)We understood the parameters used in floor planning like utilisation factor = Area occupied by the netlist/Area occupied by the entire core .Ideally utilisation factor =1,but practically utilisation factor of 0.5 to 0.6 is considered and the rest area is used for optimisation.
