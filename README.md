@@ -52,12 +52,12 @@ There first we check the floor plan default values  that is how much of core is 
 
 THE COMMAND TO RUN IS run_placement
 
-2)next number of created techniology layers and library cells are displayed
+2)Next number of created techniology layers and library cells are displayed
 
 ![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2ed3dcf5-868d-447f-9bd3-45782213e562)
 
 
-3)core area and core width are displaced
+3)Core rea and core width are displaced
 
 ![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/aa878602-3ff5-4b4b-9173-cd6d883712e2)
 
@@ -69,7 +69,7 @@ Run placement was successfull
 
 ![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e00a6587-9b32-41e9-afae-f92b1d1c15a0)
 
-5)then the new one floorplan definition gets added and it looks as shown below
+5)Then the new one floorplan definition gets added and it looks as shown below
 
 ![WhatsApp Image 2024-03-30 at 6 32 51 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0d311baf-e76d-4e19-9154-afea7f42e95a)
 
@@ -82,7 +82,8 @@ Run placement was successfull
 7)Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
 in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
 
-command is run_placement.
+.command is run_placement.
+
 ![WhatsApp Image 2024-03-30 at 6 32 52 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/6d9a8bcc-570d-4b67-b327-b327e81fc98e)
 ![WhatsApp Image 2024-03-30 at 6 32 52 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2e1d5970-189c-4b1f-b3a5-537902f43a0f)
 ![WhatsApp Image 2024-03-30 at 6 32 53 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/cab23d0d-9f06-4a8b-9ec1-e59172b741ca)
