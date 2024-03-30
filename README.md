@@ -107,7 +107,7 @@ Run floorplan was successfull
 
 6)Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
 
-![WhatsApp Image 2024-03-30 at 10 39 35 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/1f28a274-dc35-4134-8b67-25f53a051ea9)
+![layout](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/28050ec2-9005-43ee-8ca3-aac1a1d864ce)
 ![WhatsApp Image 2024-03-30 at 10 40 28 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/5dbfe665-e15a-40e6-ac44-fa99e05048be)
 ![WhatsApp Image 2024-03-30 at 10 42 51 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/28aa237c-b585-4a55-bc84-ca52be950279)
 
