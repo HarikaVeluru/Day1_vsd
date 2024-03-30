@@ -111,6 +111,7 @@ Run floorplan was successfull
 
 ![WhatsApp Image 2024-03-30 at 10 40 28 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/5dbfe665-e15a-40e6-ac44-fa99e05048be)
 ![WhatsApp Image 2024-03-30 at 10 42 51 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/28aa237c-b585-4a55-bc84-ca52be950279)
+![WhatsApp Image 2024-03-30 at 10 43 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2ec1d2e5-d074-47da-82ad-d6522d59e900)
 
 
 7)Next step is the placement of netlist on the floorplan ,placement is done in two steps  1)global placement 2)Detailed placement
@@ -119,7 +120,7 @@ in the global placement the cells are roughly placed on the floorplan here the m
 .command is run_placement.
 
 ![WhatsApp Image 2024-03-30 at 10 37 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/cfb1279c-1b06-4254-92ec-7e0fd7f6abb9)
-![WhatsApp Image 2024-03-30 at 10 43 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2ec1d2e5-d074-47da-82ad-d6522d59e900)
+
 
 
 
