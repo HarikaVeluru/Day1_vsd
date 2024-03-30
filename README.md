@@ -41,30 +41,33 @@ preplaced cells are the cells that are used in the design repeatedly ,so that lo
 5)Now next we proceeded with performing floor planning in the OpenLANE 
 There first we check the floor plan default values  that is how much of core is utilised,aspect ratio ,verical metal layer,horizontal metal layer and then we need to check the values in the config.tcl file of the design picorv32a so the values present in this will take precedence of floor default values and the highest precedence is taken by sky130A config.tcl.
 The following results are shown below.
-![WhatsApp Image 2024-03-30 at 6 32 53 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/5e9f7ec0-975b-49ac-a643-d2ad4e74fd20)
 
-![WhatsApp Image 2024-03-30 at 6 32 52 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9e1ef972-d6df-45fe-b984-c49a596e0c41)
+![WhatsApp Image 2024-03-30 at 6 32 43 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d5ffa223-1ae3-4e1a-98d9-1c2aaba91ab8)
+![WhatsApp Image 2024-03-30 at 6 32 44 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/d58d118f-2527-4131-bf44-9eb3570ea661)
+
 
 THE COMMAND TO RUN IS run_placement
 
 next number of created techniology layers and library cells are displayed
 
-![WhatsApp Image 2024-03-30 at 6 32 52 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/df2a70c6-a920-4bf2-95ba-1534418bd89e)
+![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/2ed3dcf5-868d-447f-9bd3-45782213e562)
+
 
 core area and core width are displaced
 
-![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/20551e57-074c-47bc-a58a-7769a50d5930)
+![WhatsApp Image 2024-03-30 at 6 32 46 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/aa878602-3ff5-4b4b-9173-cd6d883712e2)
 
 How many original rows ,endcaps,tap cells inserted are also shown 
 
-![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/7b57717a-1d49-4fbe-b654-fd393ce812e9)
+![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9d8fece8-7aa1-48bb-8374-90d63628be47)
 
 Run placement was successfull
 
-![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/ccd4ecea-726d-41c5-9c3c-7e59ac135547)
+![WhatsApp Image 2024-03-30 at 6 32 50 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e00a6587-9b32-41e9-afae-f92b1d1c15a0)
 
 then the new one floorplan definition gets added and it looks as shown below
-![WhatsApp Image 2024-03-30 at 6 32 49 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/4803ba28-2a06-4b8d-aec9-5d428268c5b7)
+
+![WhatsApp Image 2024-03-30 at 6 32 51 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0d311baf-e76d-4e19-9154-afea7f42e95a)
 
 Next to look at the layout we need to open magic software which will display the layout and we can see that all the tap cells are inserted and input and output pins as well we have left click and right click and press z to zoom out the area whereever you want and then to select the particular component move on iot and press s then it will get selected and in Tkcon.tcl we can give command what and it will display as shown below
 
@@ -76,9 +79,12 @@ Next step is the placement of netlist on the floorplan ,placement is done in two
 in the global placement the cells are roughly placed on the floorplan here the main reason for this global placement is wire length,where as legalisation occurs in detailed placementwhere the overlap between the cells is minimized 
 
 command is run_placement.
-![WhatsApp Image 2024-03-30 at 6 32 45 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/0b3a2a46-5d2b-4712-85c7-d27501b740df)
-![WhatsApp Image 2024-03-30 at 6 32 44 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/9c263d83-4a83-4602-9ff7-4acbf8730823)
-![WhatsApp Image 2024-03-30 at 6 32 43 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/a44206c7-f96f-420e-a162-82208cbc3bb2)
+![WhatsApp Image 2024-03-30 at 6 32 51 AM (1)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/64ef097d-eed5-454f-b5c7-0710bb55e69b)
+![WhatsApp Image 2024-03-30 at 6 32 51 AM (2)](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/e102aa8e-2dd4-4b74-ae79-72b60df30d29)
+![WhatsApp Image 2024-03-30 at 6 32 52 AM](https://github.com/HarikaVeluru/Day1_vsd/assets/165346462/8ee120d0-9342-4279-ac3f-82b96c46756e)
+
+
+
 As we can see all the cells are placed on the floor plan 
 
 Next we proceeded with cell design flow ,consider the example of inverter all the standard cells are placed in the library and different functionality of the same cells are also placed,which varies in the size,resistance.To design the particular cell there are three steps inputs,design steps,outputs.
