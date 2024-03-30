@@ -7,13 +7,10 @@ The first task was to calculate flop ratio
 ![WhatsApp Image 2024-03-30 at 11 06 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/ace1e234-a3a4-443b-a881-7a145e4239ae)
 
 
-2)Then preparing design for synthesis
-![WhatsApp Image 2024-03-30 at 11 07 49 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e5cc1723-cc39-4f6a-9134-3434b83ff333)
+2)Then preparing design for synthesis![WhatsApp Image 2024-03-30 at 11 07 49 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e5cc1723-cc39-4f6a-9134-3434b83ff333)
 
 
-3)Ran synthesis successfully
-
-![WhatsApp Image 2024-03-30 at 11 07 11 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e1102caf-a532-4a50-ba40-371d29cb4e13)
+3)Ran synthesis successfully![WhatsApp Image 2024-03-30 at 11 07 11 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e1102caf-a532-4a50-ba40-371d29cb4e13)
 
 
 4)flop ratio= Number of DFF/Total number of cells
