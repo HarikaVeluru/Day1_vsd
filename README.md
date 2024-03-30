@@ -104,16 +104,16 @@ layout gives LEF,extracted spice netlist(.cir)
 
 next we saw the 8 steps  considered in the characterisation flow and these are fed to GUNA software which will give results or information about timing,noise,power.
 8 steps are as follows 
-1)To read the model of NMOS & PMOS that is given by foundry
-2)To read the extracted spice netlist
-3)understand the behavior of the design
-4)Read the subcircuit of the design
-5)Attach the necessary power sources
-6)Apply the necessary stimuls to the design (Vpulse etc)
-7)To provide necessary output capacitance 
-8)necessary simulation commands like (.trans)
+1)To read the model of NMOS & PMOS that is given by foundry.
+2)To read the extracted spice netlist.
+3)understand the behavior of the design.
+4)Read the subcircuit of the design.
+5)Attach the necessary power sources.
+6)Apply the necessary stimuls to the design (Vpulse etc).
+7)To provide necessary output capacitance.
+8)necessary simulation commands like (.trans).
 
-Next we moved to timing characterisation that is propagation delay(50% input and 50% output) and transition of the output(20% to 80%) .
+.Next we moved to timing characterisation that is propagation delay(50% input and 50% output) and transition of the output(20% to 80%) .
 
 
 
