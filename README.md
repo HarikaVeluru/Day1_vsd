@@ -70,6 +70,7 @@ There first we check the floor plan default values  that is how much of core is 
 THE COMMAND TO RUN IS run_placement
 
 2)Next number of created techniology layers and library cells are displayed ,and core area and width is also displayed
+
 ![WhatsApp Image 2024-03-30 at 10 34 54 AM (1)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/d32b58a6-a9c1-46ce-9b5e-ef98ee05fe82)
 
 
