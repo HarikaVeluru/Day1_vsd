@@ -4,27 +4,30 @@ Implementation details of DAY1
 Day1 we were introduced to OpenLANE and how to use it and we ran the design picorv32a we checked the reports that is stat reports and synthesis as well
 The first task was to calculate flop ratio
 1)The following results for design picorv32a
-
-![WhatsApp Image 2024-03-30 at 11 06 31 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/ace1e234-a3a4-443b-a881-7a145e4239ae)
+![WhatsApp Image 2024-03-30 at 11 34 43 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/59b818f7-ad0e-4bcb-9910-6921934eb1a3)
 
 
 2)Then preparing design for synthesis
-![WhatsApp Image 2024-03-30 at 11 07 49 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e5cc1723-cc39-4f6a-9134-3434b83ff333)
+
+![WhatsApp Image 2024-03-30 at 11 35 44 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/5fcfb131-ccc5-4786-ad9b-edcdcc11347d)
 
 
 3)Ran synthesis successfully
 
-![WhatsApp Image 2024-03-30 at 11 07 11 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e1102caf-a532-4a50-ba40-371d29cb4e13)
+![WhatsApp Image 2024-03-30 at 11 37 44 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/949cb11c-c5df-4db9-844d-524ea806f1e5)
+
 
 
 4)flop ratio= Number of DFF/Total number of cells
 percentage=flopratio*100
-![WhatsApp Image 2024-03-30 at 11 08 57 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/2087b71d-25a4-4760-a3a8-5c5c18a0b337)
-![WhatsApp Image 2024-03-30 at 11 08 25 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/83a3a10c-9fe5-43aa-9057-8e593f1b65af)
 
-flop ratio=1613/18036
-flop ratio=0.0894322466178
-percentage=8.9432
+![WhatsApp Image 2024-03-30 at 11 43 10 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/4ca9cd14-3caa-4bdc-9159-ab511955f3b5)
+![WhatsApp Image 2024-03-30 at 11 44 51 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/06fdb093-316b-4842-ad47-bb92c68ad75a)
+
+
+flop ratio=1613/14876
+flop ratio=0.108429
+percentage=10.84
 
 
 
