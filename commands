@@ -1,0 +1,6 @@
+    ./flow.tcl -interactive
+    package require openlane 0.9
+    prep -design picorv32a
+    set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
+    add_lefs -src $lefs
+    run_synthesis
