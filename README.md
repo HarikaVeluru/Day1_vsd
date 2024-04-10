@@ -189,6 +189,7 @@ so here directly we will use the existing github repo which already has vsdstdce
 github link:https://github.com/nickson-jose/vsdstdcelldesign.git
 
 ![WhatsApp Image 2024-03-30 at 8 47 16 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/d1b02e9f-0068-4ddf-9a09-0cafbdcec461)
+
 And then in this lets open inverter layout in magic software which is mainly used for layout design
 
 ![WhatsApp Image 2024-03-30 at 9 00 08 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/dbfd0b9e-cf97-4261-84c0-cfe0932e6b72)
@@ -202,6 +203,7 @@ Then to understand what each component of the layout is select the respective pa
 Then by using the command "extract all" we can extract this inverter to our design picorv32a which will have extension .ext as shown below.
 
 ![WhatsApp Image 2024-03-31 at 10 01 57 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/f2006035-52f8-4d96-8397-5906aa9ad2cb)
+
 ![WhatsApp Image 2024-03-31 at 10 02 34 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/9d557a86-8a6f-4c4a-b121-ba3b1eab4a67)
 
 Then we need SPICE file for that the following command is given.
@@ -210,26 +212,31 @@ Then we need SPICE file for that the following command is given.
 ![WhatsApp Image 2024-03-31 at 10 13 01 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/711b8925-59ec-4d1e-8a3d-52d53dff1452)
 
 The SPICE file looks as shown below.
+
 ![WhatsApp Image 2024-03-31 at 10 14 53 AM (1)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/a3b1a827-015f-426c-b513-21a4f2511b84)
 
 Then to run this SPICE file we need to set up the ngspice as below.
+
 ![WhatsApp Image 2024-03-31 at 4 46 53 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/43d6d024-f955-4c5a-8be7-82d1050cadc6)
 ![WhatsApp Image 2024-03-31 at 5 26 04 PM (1)](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/901f6c4d-36ba-47cf-8f9c-45671893f1ab)
 
 
 Then we can plot the output Y vs time t for the input "a".
+
 ![WhatsApp Image 2024-03-31 at 5 27 44 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/017ffb6a-16e7-4bd4-8ac5-755746e12bfc)
 
 So now lets charactercise the cell we need to find rise time,fall time,propagation delay
 
 RISE TRANSITION TIME 
 ![WhatsApp Image 2024-03-31 at 5 55 18 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/605e1205-6f7c-471d-92c1-bc5bca2f51f0)
+
 0.04206 ns.
 
 PROPAGATION DELAY 
+
 ![WhatsApp Image 2024-03-31 at 6 04 27 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/893fccb2-8f19-49a5-a426-0a151fc009fe)
+
 0.0822ns.
-On the similar basis we can caluculate the fall time delay as well.
 
 
 
@@ -238,6 +245,7 @@ https://github.com/google/skywater-pdk
 
 Now in the designs we can see drc_tests.tgz file.
 ![WhatsApp Image 2024-03-31 at 7 25 19 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/079f053c-777a-408d-b07c-5c7a58a36579)
+
 In that a particular layout called as .magiccrc file.
 ![WhatsApp Image 2024-03-31 at 7 40 29 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/72dfeb08-c8fd-4dc0-9b47-f4e4db5f9752)
 
@@ -282,9 +290,12 @@ So if we consider peer boundary the distance between them is 3 times of Xpitch,t
 Height is even multiple of ypitch so requirement is satisfied.
 
 
+
 Ports in the magic means nothing to it it is required while extracting the LEF file in layout it is all about defining the different  layers and metal contacts.
+
 We can select the paricular part of layout and then edit text lower the label it will be first extracted in LEF file.
 And after this we need to define which is output port,power port,ground port,input port.
+
 The syntax is port class and port use.
 
 For example for port Y port class output port use signal.
