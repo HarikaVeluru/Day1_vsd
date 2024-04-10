@@ -273,11 +273,14 @@ The syntax is grid[x_spacing][y_spacing] [x_origin][y_origin].
 ![WhatsApp Image 2024-04-04 at 7 14 53 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/3a637fca-1e39-4dc0-8039-0d4b788f3f52)
 
 The width of the standard cell should be in the odd multiples of xpitch.
+
 ![WhatsApp Image 2024-04-05 at 6 42 05 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/cd183054-272e-4d02-82ab-00be7a169bff)
 So if we consider peer boundary the distance between them is 3 times of Xpitch,that is width and the requirement is satisfied.
 
 ![WhatsApp Image 2024-04-05 at 6 49 48 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/a2d5f867-bc30-43f3-ac25-cb154cee6f79)
+
 Height is even multiple of ypitch so requirement is satisfied.
+
 
 Ports in the magic means nothing to it it is required while extracting the LEF file in layout it is all about defining the different  layers and metal contacts.
 We can select the paricular part of layout and then edit text lower the label it will be first extracted in LEF file.
@@ -285,6 +288,7 @@ And after this we need to define which is output port,power port,ground port,inp
 The syntax is port class and port use.
 
 For example for port Y port class output port use signal.
+
 ![WhatsApp Image 2024-04-05 at 7 18 27 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/7f8f7aec-15a3-4be5-a073-187c5114b232)
 ![WhatsApp Image 2024-04-05 at 7 22 40 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/4b6a5ee7-13d0-46ca-86ee-d75f9d5ed011)
 
@@ -361,6 +365,11 @@ In the openlane we create a file as "pre_sta.conf" as shown below.
 ![WhatsApp Image 2024-04-08 at 8 52 57 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e47098e7-5296-453e-a424-d34923c1bfcc)
 We need to remember that when we are outside openlane , we cannot use the definitions of environmental variables which were used during synthesis. So, we will create a my_base.sdc file which will contain the definitions of environment variables.
 ![WhatsApp Image 2024-04-08 at 10 00 27 PM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/e55356d6-944e-45c4-ad79-022594808363)
+![WhatsApp Image 2024-04-10 at 9 47 28 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/4dc15c48-c201-4610-88d7-49b4c135bdce)
+![WhatsApp Image 2024-04-10 at 9 47 53 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/afc30966-3a06-4133-ad08-5ccc44b69c71)
+![WhatsApp Image 2024-04-10 at 9 48 20 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/d4fca477-4434-4593-9273-6886beb34308)
+![WhatsApp Image 2024-04-10 at 9 48 36 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/6e85ab04-0945-4e86-8b66-a2cc90110392)
+
 
  Now to optimize the set up time we will changethe FANOUT parameter and check.
  ![WhatsApp Image 2024-04-09 at 6 58 01 AM](https://github.com/HarikaVeluru/VSD-workshop/assets/165346462/fe6161aa-c740-4979-903e-965231864eaf)
